@@ -235,11 +235,11 @@ p[data-width="wide"]{
     position: absolute;
     padding: var(--size-700);
     inset: 7rem var(--size-400) auto; /* we set the top: 7rem left and right and bottom is auto */
-    max-width: 25rem;
+    max-width: 20rem;
     margin-left: auto;
     background: var(--clr-neutral-100);
     border-radius: var(--size-100);
-    box-shadow: 0 0 5em rgba(0, 0, 0, .15);
+    box-shadow: 0 5em 10em rgba(0, 0, 0, .55);
   }
 
   .nav-list{
@@ -375,13 +375,44 @@ p[data-width="wide"]{
     margin-inline: auto; /* so that it stays in the middle of the screen horizontally */
   }
 
-  .flow > * + *{
-    margin-top: var(--flow-spacer, 3em);
+  .cta{
+    text-align: center;
   }
-  
+
+  @media (min-width: 50em){
+    .cta{
+      text-align: left;
+    }
+  }
+
   .even-columns {
     display: grid;
     gap: 1rem;
+  }
+
+  @media (min-width: 50em) {
+    .even-columns {
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+    }
+  }
+
+  .verticle-align-center{
+    align-items: center;
+  }
+
+  .justify-self-end{
+    justify-self: end;
+  }
+
+  @media (min-width: 50em){
+    .justify-self-end-md{
+      justify-self: end;
+    }
+  }
+
+  .flow > * + *{
+    margin-top: var(--flow-spacer, 3em);
   }
   
   .display-sm-none{
@@ -391,12 +422,5 @@ p[data-width="wide"]{
   @media (min-width: 50em){
     .display-md-inline-flex{
       display: inline-flex;
-    }
-  }
-  
-  @media (min-width: 50em) {
-    .even-columns {
-      grid-auto-flow: column;
-      grid-auto-columns: 1fr;
     }
   }
