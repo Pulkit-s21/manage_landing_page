@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ? Header -->
+    <header class="primary-header">
+      <div class="container">
+        <div class="nav-wrapper">
+        <a href="#">
+          <img src="images/logo.svg" alt="Manage" />
+        </a>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <img class="icon-hamburger" src="/images/icon-hamburger.svg" alt="">
+          <img class="icon-close" src="/images/icon-close.svg" alt="">
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <nav class="primary-navigation" id="primary-navigation">
+          <ul aria-label="Primary" role="list" class="nav-list"> 
+            <!--  We added same id as class cz aria-controls cant look at class and needs id for it to work and we need the nav-toggle to control the uk -->
+            <!-- role = list is for screen readers cz sometimes l.s.t. none makes them not read them as list which is bad -->
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </nav>
+          <button class="button | display-sm-none display-md-inline-flex">Get Started</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ? Main -->
+    <main>
+
+      <!-- * Section 1 -->
+      <section class="padding-block-900">
+        <div class="container">
+          <div class="even-columns">
+            <div class="flow">
+              <h1 class="fs-primary-heading fw-bold">
+                Bring everyone together to build better products.
+              </h1>
+              <p>
+                Manage makes it simple for software teams to plan day-to-day
+                tasks while keeping the larger team goals in view.
+              </p>
+              <button class="button">Get Started</button>
+            </div>
+            <div>
+              <img src="images/illustration-intro.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- * Section 2 -->
+      <section class="padding-block-900">
+        <div class="container">
+          <div class="even-columns">
+            <div class="flow">
+              <h2 class="fs-secondary-heading fs-bold">
+                What’s different about Manage?
+              </h2>
+              <p>
+                Manage provides all the functionality your team needs, without the
+                complexity. Our software is tailor-made for modern digital product
+                teams.
+              </p>
+            </div>
+            <div>
+              <ul class="numbered-items | flow" role="list">
+                <li>
+                  <div class="flow" style="--flow-spacer: 1em">
+                  <h3 class="fw-bold">Track company-wide progress</h3>
+                  <p data-width="wide">
+                    See how your day-to-day tasks fit into the wider vision. Go
+                    from tracking progress at the milestone level all the way done
+                    to the smallest of details. Never lose sight of the bigger
+                    picture again.
+                  </p>
+                </div>
+                </li>
+                <li>
+                  <div class="flow" style="--flow-spacer: 1em">
+                  <h3 class="fw-bold">Advanced built-in reports</h3>
+                  <p data-width="wide">
+                    Set internal delivery estimates and track progress toward
+                    company goals. Our customisable dashboard helps you build out
+                    the reports you need to keep key stakeholders informed.
+                  </p>
+                </div>
+                </li>
+                <li>
+                  <div class="flow" style="--flow-spacer: 1em">
+                  <h3 class="fw-bold">Everything you need in one place</h3>
+                  <p data-width="wide">
+                    Stop jumping from one service to another to communicate, store
+                    files, track tasks and share documents. Manage offers an
+                    all-in-one team productivity solution.
+                  </p>
+                </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- * Section 3 -->
+      <section class="carousel | padding-block-700">
+        <h2 class="fs-secondary-heading fw-bold">What they said</h2>
+        <!-- Carousel Here -->
+        <button class="button">Get Started</button>
+      </section>
+
+      <section class="cta | padding-block-700 bg-accent-400 text-neutral-100">
+        <!-- cta is call to action class and "|" is just for visual use as it seprates utility classes and others-->
+        <div class="container">
+          <div class="even-columns">
+            <div>
+              <p class="fs-secondary-heading fw-bold">
+                Simplify how your team works today.
+              </p>
+            </div>
+            <div>
+              <button class="button" data-type="inverted">Get Started</button>
+              <!-- data-type inverted is just personal preference and we can do button-white in class also-->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ? Footer -->
+    <footer class="padding-block-700 bg-neutral-900 text-neutral-100">
+      <div class="container">
+        <div class="even-columns">
+          <div>
+            <a href="#">
+              <img src="images/logo.svg" alt="Manage" />
+            </a>
+            <ul role="list" aria-label="social links">
+              <li><a aria-label="facebook" href="#"></a><img src="images/icon-facebook.svg" alt=""></li>
+              <li><a aria-label="youtube" href="#"></a><img src="images/icon-youtube.svg" alt=""></li>
+              <li><a aria-label="twitter" href="#"></a><img src="images/icon-twitter.svg" alt=""></li>
+              <li><a aria-label="pinterest" href="#"></a><img src="images/icon-pinterest.svg" alt=""></li>
+              <li><a aria-label="instagram" href="#"></a><img src="images/icon-instagram.svg" alt=""></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="flow" style="--flow-spacer: 1em" aria-label="footer" role="list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <form action="#">
+              <input type="email" />
+              <button class="button">Go</button>
+            </form>
+            <p>Copyright 2020. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
+
+<!-- 
+  Anisha Li
+  “Manage has supercharged our team’s workflow. The ability to maintain 
+  visibility on larger milestones at all times keeps everyone motivated.”
+
+  Ali Bravo
+  “We have been able to cancel so many other subscriptions since using 
+  Manage. There is no more cross-channel confusion and everyone is much 
+  more focused.”
+
+  Richard Watts
+  “Manage allows us to provide structure and process. It keeps us organized 
+  and focused. I can’t stop recommending them to everyone I talk to!”
+
+  Shanai Gough
+  “Their software allows us to track, manage and collaborate on our projects 
+  from anywhere. It keeps the whole team in-sync without being intrusive.”
+
+  Updates in your inbox…
+  Go
+
+ -->
